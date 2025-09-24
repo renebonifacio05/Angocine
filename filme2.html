@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Séries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .alert {
+      background: #1abc9c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .serie {
+      margin-bottom: 40px;
+    }
+
+    .serie img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    h2 {
+      background: #e50914;
+      padding: 10px;
+      margin: 20px 0 10px;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .assistido {
+      background: #2ecc71;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>HYPER</header>
+
+  <div class="alert">
+    ⚒️ Está com problema nos players? Desinstale e instale novamente o aplicativo para voltar a funcionar.
+  </div>
+
+  <div class="container">
+
+    <!-- Série 1 -->
+    <div class="serie">
+      <img src="https://via.placeholder.com/900x400.png?text=Capa+da+S%C3%A9rie" alt="Capa da série">
+      <div class="descricao">
+        Esta é uma breve descrição da série. Aqui você pode colocar sinopse, ano de lançamento e outras informações.
+      </div>
+
+      <h2>Dublado</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1. Episódio</h3>
+          <span class="assistido">Assistido</span>
+        </div>
+        <div class="card">
+          <h3>2. Episódio</h3>
+        </div>
+        <div class="card">
+          <h3>3. Episódio</h3>
+          <span class="assistido">Assistido</span>
+        </div>
+      </div>
+
+      <h2>Legendado</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1. Episódio</h3>
+        </div>
+        <div class="card">
+          <h3>2. Episódio</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Hyper Séries
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* Reset simples */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a1a3a; /* Azul marinho */
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar (mesma aparência da página de filme) */
+.navbar {
+  background: #08254d;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  font-size: 22px; /* igual ao filme */
+  margin: 0;
+  font-weight: 700;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Conteúdo principal */
+.conteudo {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 100px; /* espaço extra para a bottom-bar (evita cobrir o botão) */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.capa img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  display: block;
+  margin: 0 auto;
+}
+
+.titulo {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.avaliacao {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #f1c40f;
+}
+
+.descricao {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #e6eef8;
+}
+
+/* Botão Baixar (centralizado e acima da bottom-bar) */
+.btn-baixar {
+  display: inline-block;
+  margin: 15px auto 8px auto;
+  padding: 12px 20px;
+  background: #1e90ff; /* azul claro */
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background .2s ease, transform .08s ease;
+}
+
+.btn-baixar i { margin-right: 8px; }
+
+.btn-baixar:hover { background: #187bcd; transform: translateY(-1px); }
+
+/* Temporadas com <details> */
+.temporadas { margin-top: 18px; text-align: left; }
+
+.temporadas h3 { color: #fff; margin-bottom: 10px; font-size: 18px; }
+
+details {
+  background: #0f213d;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Remove marcador padrão e adicionar triângulo custom */
+summary::-webkit-details-marker { display: none; }
+summary {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e90ff;
+  list-style: none;
+  outline: none;
+  display: block;
+  position: relative;
+  padding-right: 20px;
+}
+
+/* caret */
+summary::after {
+  content: "▸";
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  font-size: 14px;
+  transform-origin: center;
+}
+
+details[open] summary::after {
+  content: "▾";
+}
+
+/* Episódios */
+details ul {
+  margin-top: 8px;
+  padding-left: 18px;
+  color: #dfeeff;
+}
+
+details ul li {
+  margin-bottom: 6px;
+  background: transparent;
+  padding: 6px 0;
+}
+
+/* Bottom bar (restaurada e igual ao filme) */
+.bottom-bar {
+  background: #08254d;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 30;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+.bottom-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 4px 0;
+  display: block;
+}
+
+.bottom-bar i {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+details ul li a {
+  display: block;
+  color: #1e90ff;
+  text-decoration: none;
+  padding: 6px 0;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+details ul li a:hover {
+  background: rgba(30,144,255,0.15);
+  color: #63b3ff;
+}
+
+.back-btn {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  color: #1e90ff;
+}

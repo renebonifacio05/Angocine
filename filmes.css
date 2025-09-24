@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a1a3a; /* Azul marinho */
+  color: #fff;
+}
+
+.navbar {
+  background: #08254d;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 22px; /* Ajustado para ficar do mesmo tamanho da sua imagem */
+  margin: 0;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+}
+
+.conteudo {
+  padding: 20px;
+  text-align: center;
+}
+
+.capa img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px black;
+}
+
+.titulo {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.avaliacao {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #f1c40f;
+}
+
+.descricao {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.bottom-bar {
+  background: #08254d;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.bottom-bar i {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.btn-baixar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #1e90ff; /* azul claro */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.btn-baixar:hover {
+  background: #187bcd;
+}
+
+.conteudo {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 80px; /* adiciona espaço para não ficar escondido pela bottom-bar */
+}
+
+.back-btn {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  color: #1e90ff;
+}

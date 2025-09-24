@@ -1,0 +1,77 @@
+/* ===== Estilo geral ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #001f3f; /* azul marinho */
+  color: #fff;
+}
+
+/* ===== Topo ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #001f3f; /* azul marinho para combinar com o fundo */
+  color: #fff;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+/* seta voltar */
+.back-btn {
+  color: #fff; /* seta branca */
+  font-size: 22px;
+  text-decoration: none;
+}
+.back-btn:hover {
+  color: #ccc; /* fica cinza clara ao passar o mouse */
+}
+
+.espaco {
+  width: 20px; /* para alinhar o título */
+}
+
+/* ===== Conteúdo ===== */
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ===== Container de resultados ===== */
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h4 {
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
