@@ -4,7 +4,7 @@ const codigosAtivos = [
   { codigo: "CORK456", ativo: false },
   { codigo: "CORK789", ativo: true },
   { codigo: "Gina123", ativo: true },
-  { codigo: "Airesa", ativo: true },
+  { codigo: "Aires", ativo: true },
 ];
 
 function verificarCodigo() {
@@ -22,24 +22,31 @@ function verificarCodigo() {
   }
 }
 
+// Função de logout (opcional)
+function logout() {
+  sessionStorage.removeItem("autenticado");
+  window.location.href = "index.html";
+}
+
 window.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById('btnContinuar');
-  const input = document.getElementById('codigoInput');
+  const btn = document.getElementById("btnContinuar");
+  const input = document.getElementById("codigoInput");
 
   if (btn) {
-    btn.addEventListener('click', verificarCodigo);
+    btn.addEventListener("click", verificarCodigo);
   }
 
   if (input) {
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') {
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
         verificarCodigo();
       }
     });
   }
 
-  // 🔒 NOVA FUNCIONALIDADE: se tentar abrir home.html sem login válido, volta para index
-  if (window.location.pathname.includes("home.html")) {
+  // 🔒 Protege automaticamente todas as páginas, menos index.html
+  const pagina = window.location.pathname;
+  if (!pagina.includes("index.html")) {
     const autenticado = sessionStorage.getItem("autenticado");
     if (autenticado !== "true") {
       window.location.href = "index.html"; // redireciona para login
