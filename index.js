@@ -4,7 +4,7 @@ const codigosAtivos = [
   { codigo: "CORK456", ativo: false },
   { codigo: "CORK789", ativo: true },
   { codigo: "Gina123", ativo: true },
-    { codigo: "Airesa", ativo: true },
+  { codigo: "Airesa", ativo: true },
 ];
 
 function verificarCodigo() {
