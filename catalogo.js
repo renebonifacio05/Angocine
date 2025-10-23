@@ -8,6 +8,7 @@ const catalogo = [
   { titulo: "Por lugares incríveis", link: "por-lugares-incriveis.html", capa: "cb8e54bc4e2b6b51dbfd7e6bc7c3675c.jpg", tipo: "FILME" },
   { titulo: "Resgate", link: "resgate.html", capa: "https://upload.wikimedia.org/wikipedia/en/4/4e/Elio_film_poster.jpg", tipo: "FILME" },
   { titulo: "Elio 2025", link: "elio2025.html", capa: "resgate.jpg", tipo: "FILME" },
+  { titulo: " Senhor do Vento 2023", link: " SenhordoVento2023.html", capa: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbhjz76vb8dZeKoJjLNAyuv6PKG0a_pxcIYhhV6g-Pp5K3fjSl ", tipo: "FILME" },
   { titulo: "John Wick 4", link: "john-wick-4.html", capa: "johnwick4.jpg", tipo: "FILME" },
   { titulo: "Avatar 2", link: "avatar-2.html", capa: "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg", tipo: "FILME" },
   { titulo: "A Vida em um Ano", link: "a-vida-em-um-ano.html", capa: "a-vida-em-um-ano.jpg", tipo: "FILME" }, // <-- novo filme
