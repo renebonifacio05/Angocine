@@ -1,6 +1,6 @@
 // Lista de códigos ativos
 const codigosAtivos = [
-  { codigo: "Rene123", ativo: true },
+  { codigo: "666", ativo: true },
   { codigo: "Rene124", ativo: true },
   { codigo: "CORK456", ativo: false },
   { codigo: "CORK789", ativo: true },
