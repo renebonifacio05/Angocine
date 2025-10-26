@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ANGOCINE - Solo Leveling</title>
+  <link rel="stylesheet" href="series.css">
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+  // Se não estiver logado, manda para o login
+  if (localStorage.getItem("logado") !== "true") {
+    window.location.href = "index.html";
+  }
+</script>
+</head>
+<body>
+  <!-- Navbar (mesmo estilo da página de filme) -->
+  <header class="navbar">
+    <a href="home.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+    <h1 class="logo">ANGOCINE</h1>
+    <div class="search"><i class="fa fa-search"></i></div>
+  </header>
+
+  <main class="conteudo">
+    <!-- Capa / imagem da série -->
+    <div class="capa">
+      <img src="https://share.google/images/VuIpCCeccvXMmQyc1" alt="Poster da Série Solo Leveling">
+    </div>
+
+    <h2 class="titulo">Solo Leveling</h2>
+    <p class="avaliacao">★★★★★ 250 votos</p>
+
+    <p class="descricao">
+      Sung Jin-Woo, um dos caçadores mais fracos da humanidade, acaba se tornando o mais poderoso
+      após descobrir um misterioso sistema que lhe permite aumentar seus poderes infinitamente.
+      Uma história épica de superação e batalhas contra monstros aterrorizantes.
+    </p>
+
+    <!-- Botão baixar -->
+    <a href="#" class="btn-baixar"><i class="fa fa-download"></i> Baixar</a>
+
+    <!-- Temporadas -->
+    <section class="temporadas">
+      <h3>Temporadas</h3>
+
+      <details open>
+        <summary>Temporada 1</summary>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1ddxpVzKnGhMYP7chPvbvJpg1Yv07DlNB/view?usp=drivesdk">Ep. 1 — O Mais Fraco do Mundo</a></li>
+          <li><a href="https://drive.google.com/file/d/1YPGOXCpFo-iCHMC_5gdhPF_sMDmIB82A/view?usp=drivesdk">Ep. 2 — O Portal Duplo</a></li>
+          <li><a href="https://drive.google.com/file/d/1bpQ7HpB2LEVOYhqQcV7MIvDoK5foxdyQ/view?usp=drivesdk">Ep. 3 — Despertar</a></li>
+          <li><a href="https://drive.google.com/file/d/1Qbn_9ANCgax_9FVgrELUlTg1WnuNL7la/view?usp=drivesdk">Ep. 4 — O Sistema</a></li>
+          <li><a href="https://drive.google.com/file/d/1Ku5Huw7IEkc0pZwj62u0DswGG-VpxbSg/view?usp=drivesdk">Ep. 5 — Rank E</a></li>
+          <li><a href="https://drive.google.com/file/d/1Qf8fiVdEMkou4moE69NITtURYxNDcLMS/view?usp=drivesdk">Ep. 6 — O Templo de Cartenon</a></li>
+          <li><a href="https://drive.google.com/file/d/1nfGM5MdROyrD2lhtE51UKY3X71Qz1LSd/view?usp=drivesdk">Ep. 7 — O Jogo de Caça</a></li>
+          <li><a href="https://drive.google.com/file/d/1Wcf3o-HLGDpTL6sGTsW8hM9DCm2mZgvx/view?usp=drivesdk">Ep. 8 — O Chefe de Dungeon</a></li>
+          <li><a href="https://drive.google.com/file/d/15luwMCaQC4PFLdJj7voASfidY-c1XYIY/view?usp=drivesdk">Ep. 9 — Forja de Poder</a></li>
+          <li><a href="https://drive.google.com/file/d/1HQyCZY42zRsW2xXYGmvsfzD8d9Yuxu-g/view?usp=drivesdk">Ep. 10 — A Nova Missão</a></li>
+          <li><a href="https://drive.google.com/file/d/1w7JgmY_lJar5D7f6g5bOOXZYCCxK3GE_/view?usp=drivesdk">Ep. 11 — Caçada Solitária</a></li>
+          <li><a href="https://drive.google.com/file/d/1OOE549Xu2tai40DDQUqzFuWccWI5cEEs/view?usp=drivesdk">Ep. 12 — O Verdadeiro Caçador</a></li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <!-- Bottom bar -->
+  <footer class="bottom-bar">
+    <a href="home.html"><i class="fa fa-home"></i><span>Início</span></a>
+    <a href="vetrine-filmes.html"><i class="fa fa-film"></i><span>Filmes</span></a>
+    <a href="vetrine-anime.html"><i class="fa fa-dragon"></i><span>Animes</span></a>
+    <a href="vetrine-dorama.html"><i class="fa fa-tv"></i><span>Doramas</span></a>
+    <a href="resultado.html"><i class="fa fa-search"></i><span>Buscar</span></a>
+  </footer>
+</body>
