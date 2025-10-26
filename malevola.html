@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANGOCINE - Malévola</title>
+  <link rel="stylesheet" href="filmes.css">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+  // Se não estiver logado, manda para o login
+  if (localStorage.getItem("logado") !== "true") {
+    window.location.href = "index.html";
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="home.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+    <h1 class="logo">ANGOCINE</h1>
+    <div class="search"><i class="fa fa-search"></i></div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="conteudo">
+    <div class="capa">
+      <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/0b/Maleficent_2014.jpg/250px-Maleficent_2014.jpg">
+    </div>
+
+    <h2 class="titulo">Malévola</h2>
+    <p class="avaliacao">★★★★☆ 240 votos</p>
+
+    <p class="descricao">
+      Malévola, uma jovem de coração puro, vive em um reino pacífico até que é traída por um humano em quem confiava. 
+      Consumida pela vingança, ela lança uma terrível maldição sobre a filha recém-nascida do rei — a pequena Aurora. 
+      No entanto, ao longo dos anos, Malévola percebe que a menina pode ser a chave para restaurar a paz no reino.
+    </p>
+
+    <!-- Botão Baixar -->
+    <a href="https://drive.google.com/file/d/1bkdH151i_HLOrP0oANrEJddHjOzyAYCI/view?usp=drivesdk" 
+       class="btn-baixar" target="_blank">
+       <i class="fa fa-download"></i> Baixar
+    </a>
+  </main>
+  
+  <!-- Barra inferior -->
+  <footer class="bottom-bar">
+    <a href="home.html"><i class="fa fa-home"></i><span>Início</span></a>
+    <a href="vetrine-filmes.html"><i class="fa fa-film"></i><span>Filmes</span></a>
+    <a href="vetrine-anime.html"><i class="fa fa-dragon"></i><span>Animes</span></a>
+    <a href="vetrine-dorama.html"><i class="fa fa-tv"></i><span>Doramas</span></a>
+    <a href="resultado.html"><i class="fa fa-search"></i><span>Buscar</span></a>
+  </footer>
+</body>
+</html>
